@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rimrod & Harris design studio</title>
+  </head>
+  <body>
+    <head>
+      <nav>
+        <div>Rimrod & Harris</div>
+        <div></div>
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>menu</div>
+      </nav>
+    </head>
+    <main>
+      <h1>Design</h1>
+      <div><img src="./assets/item-one.jpeg" alt="" /></div>
+      <div><img src="./assets/item-two.jpeg" alt="" /></div>
+      <div><img src="./assets/item-three.jpeg" alt="" /></div>
+      <div><img src="./assets/item-four.jpeg" alt="" /></div>
+      <div><img src="./assets/item-five.jpeg" alt="" /></div>
+      <div><img src="./assets/item-six.jpeg" alt="" /></div>
+      <div><img src="./assets/item-seven.jpeg" alt="" /></div>
+      <div><img src="./assets/item-eight.jpeg" alt="" /></div>
+      <div><img src="./assets/item-nine.jpeg" alt="" /></div>
+    </main>
+    <footer>
+      <div>Berlin, DE</div>
+      <div>DCI, 2021</div>
+    </footer>
+  </body>
+</html>
