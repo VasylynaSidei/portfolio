@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "parcel": "^2.9.3"
+  },
+  "scripts": {
+    "start": "rm -rf dev-serve && parcel index.html --dist-dir dev-serve",
+    "build": "rm -rf build && parcel build index.html --dist-dir build --public-url ./",
+    "publish": "gh-pages -d build"
+  },
+  "homepage": "https://vasylynasidei.github.io/portfolio",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
