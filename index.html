@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <!-- *WHITE NAVBAR -->
+      <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            id="icon-togg"
+          >
+            <span class="navbar-toggler-icon" id="icon-togg"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item" id="nav-item-override">
+                  <a class="nav-link" id="nav-link" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="nav-desktop">
+        <ul class="nav-desktop-ul">
+          <li class="nav-desktop-links"><a href="#">Home</a></li>
+          <li class="nav-desktop-links"><a href="#about-me">About Me</a></li>
+          <li class="nav-desktop-links"><a href="#skills">Skills</a></li>
+          <li class="nav-desktop-links"><a href="#project">Projects</a></li>
+          <li class="nav-desktop-links"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <!--<div class="container">
+        <div class="row">
+          <h1>Hi, I'm</h1>
+        </div>
+        <div class="row"><h1 class="vs">Vasylyna Sidei</h1></div>
+        <div class="row">
+          <h1>
+            <span>W</span>
+            <span>e</span>
+            <span>b</span>
+            <span>D</span>
+            <span>e</span>
+            <span>v</span>
+            <span>e</span>
+            <span>l</span>
+            <span>o</span>
+            <span>p</span>
+            <span>e</span>
+            <span>r</span>
+            <span></span>
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-12 col-lg-4 col-">
+            <button class="build">
+              <a href="#contact">Let's build the web together!</a>
+            </button>
+          </div>
+          <div class="col-2 col-md-12 col-lg-4 col-">
+            <button class="project">
+              <a href="#project"> <i class="fa-solid fa-code"></i> Project</a>
+            </button>
+          </div>
+        </div>
+      </div> -->
+      <div class="intro">
+        <h1>
+          Hi, I'm
+          <h1 class="vs">Vasylyna Sidei</h1>
+          <h1>
+            <span>W</span>
+            <span>e</span>
+            <span>b</span>
+            <span>D</span>
+            <span>e</span>
+            <span>v</span>
+            <span>e</span>
+            <span>l</span>
+            <span>o</span>
+            <span>p</span>
+            <span>e</span>
+            <span>r</span>
+            <span></span>
+          </h1>
+        </h1>
+        <div class="buttons">
+          <button class="build">
+            <a href="#contact">Let's build the web together!</a>
+          </button>
+          <button class="project">
+            <a href="#project"> <i class="fa-solid fa-code"></i> Project</a>
+          </button>
+        </div>
+      </div>
+      <div class="sticky-btn">
+        <button class="go-up">
+          <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        </button>
+      </div>
+    </section>
+    <section class="about-me-container" id="about-me">
+      <h2>About <span>Me</span></h2>
+      <div class="about-me">
+        <img src="./img/me4.jpeg" alt="portrait" />
+        <div>
+          <p class="about-me-p">
+            I'm a passionate and creative web developer who thrives on turning
+            ideas into innovative digital experiences. I'm currently on an
+            exciting journey at DCI Digital Career Institute where I'm honing my
+            skills as a developer, and I'm eagerly looking forward to exploring
+            new horizons through exciting projects.
+          </p>
+          <p class="about-me-p">
+            For me, web development is not just a career; it's a calling. The
+            thrill of solving complex problems, the joy of bringing a design to
+            life with code, and the satisfaction of seeing users benefit from my
+            work drive me forward every day. Each project is an opportunity for
+            me to blend my technical expertise with my creative flair, resulting
+            in websites that stand out in today's digital landscape.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h2>Technical <span>Skills</span></h2>
+      <div class="skills-img">
+        <div class="transparent-container">
+          <div class="transparent">
+            <h4>CSS</h4>
+          </div>
+          <div><img src="./img/css.png" alt="css-logo" /></div>
+        </div>
+        <div class="transparent-container">
+          <div class="transparent">
+            <h4>HTML</h4>
+          </div>
+          <div><img src="./img/html.png" alt="html-logo" /></div>
+        </div>
+        <div class="transparent-container">
+          <div class="transparent">
+            <h4>Bootstrap</h4>
+          </div>
+          <div><img src="./img/bootstrap.png" alt="bootstrap-logo" /></div>
+        </div>
+
+        <div class="transparent-container">
+          <div class="transparent">
+            <h4>GIT</h4>
+          </div>
+          <div><img src="./img/git.png" alt="git-logo" /></div>
+        </div>
+        <div class="transparent-container">
+          <div class="transparent">
+            <h4>SASS</h4>
+          </div>
+
+          <div><img src="./img/sass.png" alt="sass-logo" /></div>
+        </div>
+        <div class="transparent-container">
+          <div class="transparent">
+            <h4>Node.js</h4>
+          </div>
+
+          <div><img src="./img/node.png" alt="sass-logo" /></div>
+        </div>
+        <div class="transparent-container">
+          <div class="transparent">
+            <h4>React</h4>
+          </div>
+
+          <div><img src="./img/react.png" alt="sass-logo" /></div>
+        </div>
+        <div class="transparent-container">
+          <div class="transparent">
+            <h4>JavaScript</h4>
+          </div>
+
+          <div><img src="./img/javascript.png" alt="sass-logo" /></div>
+        </div>
+        <div class="transparent-container">
+          <div class="transparent">
+            <h4>MongoDB</h4>
+          </div>
+
+          <div><img src="./img/mongo.png" alt="sass-logo" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="project">
+      <h2>My <span>Projects</span></h2>
+      <div class="project-cont-img">
+        <div class="transparent-container-mobile">
+          <h4 class="mobile">Music Player</h4>
+          <div class="transparent-container">
+            <div class="transparent-description">
+              <h4>Music Player</h4>
+              <ul>
+                <li>Using HTML</li>
+                <li>Using CSS</li>
+                <li>Using CSS Flexbox layouts</li>
+              </ul>
+              <div class="project-btn">
+                <a href="https://github.com/VasylynaSidei/Player">View code</a>
+                <a href="#">View site</a>
+              </div>
+            </div>
+            <div>
+              <img src="./img/player.png" alt="" />
+            </div>
+          </div>
+          <div class="project-btn-mobile">
+            <a href="https://github.com/VasylynaSidei/Player">View code</a>
+            <a href="#">View site</a>
+          </div>
+        </div>
+        <div class="transparent-container-mobile">
+          <h4 class="mobile">Sweety Shop</h4>
+          <div class="transparent-container">
+            <div class="transparent-description">
+              <h4>Sweety Shop</h4>
+              <ul>
+                <li>Using HTML</li>
+                <li>Using CSS</li>
+                <li>Using CSS Flex</li>
+                <li>Using CSS Media Queries</li>
+              </ul>
+              <div class="project-btn">
+                <a href="#">View code</a>
+                <a href="#">View site</a>
+              </div>
+            </div>
+            <div>
+              <img src="./img/sweety.png" alt="" />
+            </div>
+          </div>
+          <div class="project-btn-mobile">
+            <a href="https://github.com/VasylynaSidei/Player">View code</a>
+            <a href="#">View site</a>
+          </div>
+        </div>
+        <div class="transparent-container-mobile">
+          <h4 class="mobile">Design studio</h4>
+          <div class="transparent-container">
+            <div class="transparent-description">
+              <h4>Design studio</h4>
+              <ul>
+                <li>Using HTML</li>
+                <li>Using CSS</li>
+                <li>Using CSS Grid</li>
+              </ul>
+              <div class="project-btn">
+                <a href="#">View code</a>
+                <a href="#">View site</a>
+              </div>
+            </div>
+            <div>
+              <img src="./img/studio.png" alt="" />
+            </div>
+          </div>
+          <div class="project-btn-mobile">
+            <a href="https://github.com/VasylynaSidei/Player">View code</a>
+            <a href="#">View site</a>
+          </div>
+        </div>
+        <div class="transparent-container-mobile">
+          <h4 class="mobile">Speaker Shop Design</h4>
+          <div class="transparent-container">
+            <div class="transparent-description">
+              <h4>Speaker Shop Design</h4>
+              <ul>
+                <li>Using HTML</li>
+                <li>Using CSS</li>
+                <li>Using CSS Flexbox</li>
+              </ul>
+              <div class="project-btn">
+                <a href="#">View code</a>
+                <a href="#">View site</a>
+              </div>
+            </div>
+            <div>
+              <img src="./img/shop.png" alt="" />
+            </div>
+          </div>
+          <div class="project-btn-mobile">
+            <a href="https://github.com/VasylynaSidei/Player">View code</a>
+            <a href="#">View site</a>
+          </div>
+        </div>
+        <div class="transparent-container-mobile">
+          <h4 class="mobile">Processing File</h4>
+          <div class="transparent-container">
+            <div class="transparent-description">
+              <h4>Processing File</h4>
+              <ul>
+                <li>Using HTML</li>
+                <li>Using CSS</li>
+                <li>Using CSS Animation</li>
+                <li>Using CSS Positioning</li>
+              </ul>
+              <div class="project-btn">
+                <a href="#">View code</a>
+                <a href="#">View site</a>
+              </div>
+            </div>
+            <div>
+              <img src="./img/processing-example.gif" alt="" />
+            </div>
+          </div>
+          <div class="project-btn-mobile">
+            <a href="https://github.com/VasylynaSidei/Player">View code</a>
+            <a href="#">View site</a>
+          </div>
+        </div>
+        <div class="transparent-container-mobile">
+          <h4 class="mobile">Website freelance developer</h4>
+          <div class="transparent-container">
+            <div class="transparent-description">
+              <h4>Website freelance developer</h4>
+              <ul>
+                <li>Using HTML</li>
+                <li>Using CSS</li>
+                <li>Using CSS FlexBOX</li>
+                <li>Using CSS Positioning</li>
+              </ul>
+              <div class="project-btn">
+                <a href="#">View code</a>
+                <a href="#">View site</a>
+              </div>
+            </div>
+            <div>
+              <img src="./img/desktop.png" alt="" />
+            </div>
+          </div>
+          <div class="project-btn-mobile">
+            <a href="https://github.com/VasylynaSidei/Player">View code</a>
+            <a href="#">View site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact <span class="span-cont">Me</span></h2>
+
+      <div class="contain">
+        <div class="cont-message">
+          <div class="contact-icons">
+            <h3>Drop Me a Message</h3>
+            <div class="cont-icon">
+              <i class="fa-solid fa-phone-volume"></i> +49 176 41483897
+            </div>
+            <div class="cont-icon">
+              <i class="fa-solid fa-envelope"></i>
+              vasylyna.sidei@gmail.com
+            </div>
+            <div class="cont-icon">
+              <i class="fa-solid fa-location-dot"></i> Berlin, Germany
+            </div>
+            <div class="cont-icon-i">
+              <a
+                href="https://linkedin.com/in/vasylyna-sidei-223755268"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/VasylynaSidei" target="_blank">
+                <i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-contact">
+          <form action="https://formspree.io/f/meqbkqbe" method="post">
+            <label for="name"></label>
+            <input type="text" placeholder="Name" />
+            <label for="email"></label>
+            <input type="email" placeholder="Email" />
+            <label for="message"></label>
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="6"
+              placeholder="Message"
+            ></textarea>
+            <button class="form-btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        2023 - <i class="fa-solid fa-copyright"></i> All rights reserved
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
