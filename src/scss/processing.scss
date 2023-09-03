@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  background-color: rgb(254, 191, 201);
+}
+
+img {
+  width: 75px;
+  height: 75px;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.processing-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: scale(0.8) translateX(300%);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) translateX(0) translateY(5%);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.2) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8) translateX(-300%);
+    opacity: 0;
+  }
+}
+
+@keyframes drop {
+  0% {
+    transform: scale(0.8) translateY(-300%);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1) translateY(15%);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1) translateY(-15%);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(5%);
+    opacity: 1;
+  }
+}
+
+.processing-item {
+  position: absolute;
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.processing-item:nth-child(1) {
+  animation-name: slide;
+}
+
+.processing-item:nth-child(2) {
+  animation-name: slide;
+  animation-iteration-count: 3;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.processing-item:nth-child(3) {
+  animation-name: drop;
+  animation-delay: 4s;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.processing-label {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  animation-name: blink;
+  animation-duration: 1s;
+}
+
+.processing-label:nth-of-type(1) {
+  animation-iteration-count: 4;
+}
+
+.processing-label:nth-of-type(2) {
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
