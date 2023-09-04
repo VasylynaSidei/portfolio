@@ -1,5 +1,3 @@
-@import "layout";
-
 * {
   margin: 0;
   padding: 0;
@@ -98,7 +96,7 @@ li:hover {
 }
 
 .hero .intro {
-  padding: 100px;
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -763,17 +761,17 @@ footer {
     color: black;
   }
   .hero h1 {
-    font-size: 3rem;
+    font-size: clamp(1rem, 10vw, 3rem);
     transform: translateY(80px);
   }
 
   .hero h1.vs {
-    font-size: 4rem;
+    font-size: clamp(2rem, 10vw, 4rem);
     transform: translateY(80px);
   }
 
   .hero .intro {
-    padding: 100px;
+    margin: 0 2rem;
     width: 100%;
   }
 
